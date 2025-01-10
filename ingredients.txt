@@ -1,0 +1,5 @@
+sckit-learn
+matplotlib
+wordcloud
+textblob
+seaborn
