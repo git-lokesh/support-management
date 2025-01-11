@@ -2,25 +2,19 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-
 df = pd.read_csv('customer_support_tickets.csv')
-
 
 print("First few rows of the dataset:")
 print(df.head())
 
-
 print("\nChecking for null values:")
 print(df.isnull().sum())
-
 
 print("\nData Types:")
 print(df.dtypes)
 
-
 print("\nSummary Statistics:")
 print(df.describe())
-
 
 print("\nChecking for duplicate rows:")
 print(df.duplicated().sum())
@@ -28,7 +22,6 @@ print(df.duplicated().sum())
 df_cleaned = df.dropna(subset=['Ticket Status'])
 print("\nCleaned Data (after dropping missing Ticket Status):")
 print(df_cleaned.head())
-
 
 ticket_type_counts = df_cleaned['Ticket Type'].value_counts()
 print("\nMost occurring issues by Ticket Type:")
