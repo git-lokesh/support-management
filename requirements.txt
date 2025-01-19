@@ -1,3 +1,5 @@
+streamlit
+pyarrow
 pandas
 matplotlib
 seaborn
